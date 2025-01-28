@@ -4,10 +4,20 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
+
 class TaskComponent extends Component
 {
-    public function render()
+    public $modal = false;
+    public function openCreateModal()
     {
-        return view('livewire.task-component');
+        $this->clearFields();
+        $this->modal = true;
+    }
+
+    public function closeCreateModal()
+    {
+        $this->clearFields();
+        $this->modal = false;
     }
 }
+

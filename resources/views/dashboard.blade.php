@@ -14,6 +14,8 @@
         </div>
 
         <div class="overflow-x-auto">
+              <button class="bg-purple-600 text-white px-4 py-2 rounden hover:bg-purple-700 my-6"
+              wire:click="openCreateModal">Crear tarea</button>
    <table class="table-auto w-full border-collapse border border-gray-300">
 
    <!-- Tabla -->
@@ -79,7 +81,7 @@
         </form>
     </div>
 </div>
-<!-- Modal Background -->
+
     
                
    
